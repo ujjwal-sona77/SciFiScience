@@ -95,6 +95,7 @@
 
     .search i {
         border: none;
+        color: #fff;
     }
 
     #last {
@@ -314,7 +315,7 @@
     nav #heading {
         font-family: Lobster;
         letter-spacing: 4px;
-        font-size: 5vw;
+        font-size: 5vw; 
         color: #fff;
     }
 
