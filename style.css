@@ -18,7 +18,7 @@
     src: url(./Nosifer-Regular.woff2);
 }
 
-@media (min-width : 1100px) and (max-width : 1600px) {
+@media (min-width : 1000px) and (max-width : 1600px) {
     * {
         box-sizing: border-box;
         margin: 0;
@@ -30,6 +30,10 @@
     *::selection {
         background-color: #fff;
         color: #000;
+    }
+
+    *::-webkit-scrollbar {
+        display: none;
     }
 
     html,
