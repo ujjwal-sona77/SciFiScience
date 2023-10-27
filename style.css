@@ -278,6 +278,10 @@
     .error_page {
         display: none;
     }
+
+    .mobile {
+        display: none;
+    }
 }
 
 @media (min-width : 600px) and (max-width : 1000px) {
