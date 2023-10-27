@@ -4,42 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aayushchouhan24/sheryjs@main/dist/Shery.css" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Login</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
     <link rel="stylesheet" href="./signin.css">
 </head>
 
 <body>
-    <video autoplay loop muted src="./sign_in_bg.mp4"></video>
-    <div class="main">
-        <div class="workingarea">
-            <div class="form">
-                <h3 id="head">Sign In</h3>
-                <h1 id="username">Username :</h1>
-                <input id="in_1" type="text" name="username" placeholder="Enter you Username .">
-                <h1 id="pass">Password :</h1>
-                <input id="in_2" type="password" name="password" placeholder="At least 8 Chaarcters .">
-                <a href="./index.html" id="btn_sign_up">
-                    <button>Sign In <i class="ri-arrow-right-line"></i></button>
-                </a>
-                <h2 id="alerdy_">New User Create an Account . </h2><a href="#">Sign Up</a>
+    <div class="form-container">
+        <h2 class="form-title">Login</h2>
+        <form id="login-form">
+            <input type="text" id="login-username" placeholder="Username" required>
+            <div class="password-container">
+                <input type="password" id="login-password" placeholder="Password" required>
+                <i class="fas fa-eye password-icon" id="password-toggle"></i>
             </div>
-        </div>
+            <a href="./index.html">
+                <button id="login-button">Login</button>
+            </a>
+        </form>
+        <p>Don't have an account? <a href="./sign_up.html">Register here</a></p>
+        <p id="message" class="message"></p>
     </div>
-    <!--  Gsap is needed for Basic Effects -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
-    <!-- Scroll Trigger is needed for Scroll Effects -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-    <!-- Three.js is needed for 3d Effects -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
-
-    <!-- ControlKit is needed for Debug Panel -->
-    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
-    <script src="./script_sign_in.js"></script>
+    <script src="./signin.js"></script>
 </body>
 
 </html>

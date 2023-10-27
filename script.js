@@ -7,7 +7,7 @@ Shery.mouseFollower({
 
 
 gsap.to("nav", {
-	backgroundColor: "#fff",
+	backgroundColor: "#a6a2a2",
 	height: "12vh",
 	duration: 1,
 	color : "#000" ,

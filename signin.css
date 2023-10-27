@@ -1,94 +1,97 @@
-@font-face {
-    font-family: "Oswald Semi";
-    src: url(./Oswald/static/Oswald-SemiBold.ttf);
-}
-
-* {
-    box-sizing: border-box;
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #3498db, #e74c3c, #9b59b6);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     margin: 0;
-    padding: 0;
 }
 
-html, body{
+.form-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.form-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+input {
     width: 100%;
-    height: 100%;
-}
-video {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    position: fixed;
-    z-index: -1;
-}
-
-.workingarea {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s, border 0.3s;
 }
 
-.form {
-    width: 350px;
-    height: 425px;
-    background-color: rgba(0, 255, 251, 0.193);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+input:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #3498db;
+}
+
+.password-container {
     position: relative;
 }
 
-.form #head {
-    font-size: 40px;
-    position: relative;
-    bottom: 25%;
-    font-family: "Oswald Semi";
-    margin-top: 50px;
-}
-
-.form #username {
-    position: relative;
-    font-size: 25px;
-    bottom: 14%;
-    right: 27%;
-}
-
-.form #in_1 {
-    font-size: 22.5px;
-    margin-top: 7px;
-    margin-left: 20px;  
-    width: 80%;
-    position: relative;
-    bottom: 13%;
-    right: 5%;
-    color: rgba(0, 0, 0, 0.731);
-}
-
-.form #pass {
-    position: relative;
-    font-size: 25px;
-    bottom: 14%;
-    right: 27%;
-    margin-top: 1vw;
-}
-
-.form #in_2 {
-    font-size: 22px;
-    margin-top: 7px;
-    margin-left: 20px;
-    width: 80%;
-    position: relative;
-    bottom: 13%;
-    right: 5%;
-    font-weight: 700;
-}
-
-.form #btn_sign_up button {
-    font-size: 22.5px;
-    position: relative;
-    left: 70%;
-    bottom: 90%;
+.password-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.7);
     cursor: pointer;
 }
+
+.password-icon:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: none;
+    background: #3498db;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+.form-title {
+    font-size: 24px;
+}
+
+.message {
+    color: red;
+    margin-top: 10px;
+}
+
+.success {
+    color: #00ff6a;
+}
+
+
