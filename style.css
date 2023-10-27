@@ -77,14 +77,12 @@
         text-decoration: none;
         text-transform: uppercase;
         font-size: .9vw;
-        color: white;
     }
 
     nav a i {
         border: 1px solid #313131;
         font-size: 1vw;
         font-weight: 900;
-        color: white;
     }
 
     .search {
@@ -99,7 +97,6 @@
 
     .search i {
         border: none;
-        color: #fff;
     }
 
     #last {

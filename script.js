@@ -10,6 +10,7 @@ gsap.to("nav", {
 	backgroundColor: "#fff",
 	height: "12vh",
 	duration: 1,
+	color : "#000" ,
 	scrollTrigger: {
 		scroller: "body",
 		trigger: "nav",
