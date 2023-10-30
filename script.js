@@ -1,12 +1,18 @@
-Shery.mouseFollower({
-	//Parameters are optional.
-	skew: true,
-	ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-	duration: .7,
+// Shery.mouseFollower({
+// 	//Parameters are optional.
+// 	skew: true,
+// 	ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+// 	duration: .7,
+// });
+
+var crsr = document.querySelector(".pc .crsr");
+document.addEventListener("mousemove", function (dets) {
+    crsr.style.left = dets.x + "px";
+    crsr.style.top = dets.y  + "px";
 });
 
 
-gsap.to("nav", {
+gsap.to(".pc nav", {
 	backgroundColor: "#a6a2a2",
 	height: "12vh",
 	duration: 1,
@@ -39,19 +45,5 @@ Shery.makeMagnet(".exploration_img_bt , #imo_1 , #imo_2" /* Element to target.*/
 	ease: "cubic-bezier(0.23, 1, 0.320, 1)",
 	duration: 1,
 });
-
-// gsap.to(".mobile .main" , {
-// 	scrollTrigger : {
-// 		scroller : "body" , 
-// 		trigger : ".mobile .main" , 
-// 		markers : true ,
-// 		start : "top 60%" ,
-// 		end : "top 61%" ,
-// 		scrub : 5
-// 	} , 
-// 	backgroundColor : "#000" , 
-
-// })
-
 
 
