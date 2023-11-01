@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+    <link rel="stylesheet" href="../CSS/signin.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h2 class="form-title">Login</h2>
+        <form id="login-form">
+            <input type="text" id="login-username" placeholder="Username" required>
+            <div class="password-container">
+                <input type="password" id="login-password" placeholder="Password" required>
+                <i class="fas fa-eye password-icon" id="password-toggle"></i>
+            </div>
+            <a href="./index.html">
+                <button id="login-button">Login</button>
+            </a>
+        </form>
+        <p>Don't have an account? <a href="./sign_up.html">Register here</a></p>
+        <p id="message" class="message"></p>
+    </div>
+    <script src="../JS/signin.js"></script>
+</body>
+
+</html>
