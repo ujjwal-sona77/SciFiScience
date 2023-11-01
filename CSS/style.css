@@ -18,6 +18,11 @@
     src: url(../FONTS/Nosifer-Regular.woff2);
 }
 
+@font-face {
+    font-family: Lobster;
+    src: url(../FONTS/Lobster-Regular.woff2);
+}
+
 @media (min-width : 1000px) and (max-width : 1600px) {
     .crsr {
         height: 20px;
