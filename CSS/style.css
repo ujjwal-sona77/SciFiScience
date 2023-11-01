@@ -394,11 +394,6 @@
         height: 100%;
     }
 
-    @font-face {
-        font-family: lobster;
-        src: url(./Lobster-Regular.ttf);
-    }
-
     .pc {
         display: none;
     }
