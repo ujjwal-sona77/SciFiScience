@@ -47,3 +47,6 @@ Shery.makeMagnet(".exploration_img_bt , #imo_1 , #imo_2" /* Element to target.*/
 });
 
 
+
+
+

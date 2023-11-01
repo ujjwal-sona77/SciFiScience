@@ -79,9 +79,10 @@
 
     nav #logo {
         position: relative;
-        width: 5vw;
+        width: 7vw;
         height: 100%;
         padding: 10px 7px;
+        margin-top: 10px;
     }
 
     nav a {
@@ -430,6 +431,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        color: white;
     }
 
     .hero_m .hero_main_top {
@@ -485,10 +487,10 @@
     }
 
     .hero_m .content #sci_m {
-        font-weight: 500;
+        font-weight: 800;
         font-family: Merriweather;
-        /* float: left; */
-        /* padding-right: 47%; */
+        color: white;
+        font-size: 4vw;
     }
 
     .hero_m .content .top_img_p {
@@ -502,6 +504,14 @@
     .hero_m .content .top_img_p p {
         margin-left: 2vw;
         font-size: 3.5vw;
+        color: white;
+    }
+
+    #p22 {
+        color: white;
+        font-size: 4vw;
+        font-weight: 800;
+        font-family: Merriweather;
     }
 
     .hero_m .content .top_img_p img {
