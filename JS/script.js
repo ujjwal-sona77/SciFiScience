@@ -104,6 +104,30 @@ gsap.to(".mobile .hero_m .content" , {
 	opacity: 1
 })
 
+gsap.from(".mobile .content .imgs #img-1" , {
+	scrollTrigger: {
+		scroller: "body" , 
+		trigger: ".mobile .content .imgs #img-1" ,
+		start: "top 60%",
+		end: "top 65%", 
+		scrub: 2
+	}, 
+	opacity: 0,
+	x: -200
+});
+
+gsap.from(".mobile .content .imgs #img-2" , {
+	scrollTrigger: {
+		scroller: "body" , 
+		trigger: ".mobile .content .imgs #img-1" ,
+		start: "top 60%",
+		end: "top 65%", 
+		scrub: 2
+	}, 
+	opacity: 0,
+	x: 200
+});
+
 
 Shery.makeMagnet(".exploration_img_bt , #imo_1 , #imo_2" /* Element to target.*/, {
 	//Parameters are optional.
