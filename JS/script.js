@@ -40,6 +40,7 @@ Shery.makeMagnet(".exploration_img_bt , #imo_1 , #imo_2" /* Element to target.*/
 	duration: 1,
 });
 
+
 // Mobile part
 
 gsap.to(".mobile .main", {
@@ -99,6 +100,7 @@ gsap.from(".mobile .content .imgs #img-2", {
     opacity: 0,
     x: 200
 });
+
 
 
 

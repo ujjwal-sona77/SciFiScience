@@ -378,7 +378,7 @@
     .mobile .main {
         position: absolute;
         width: 100%;
-        background-color: #00000026;
+        background-color: #ECECEC;
     }
 
     * {
@@ -398,6 +398,7 @@
     body {
         width: 100%;
         height: 100%;
+        background-color: #ECECEC;
     }
 
     .pc {
@@ -411,12 +412,14 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: rgba(11, 215, 96, 0.43);
+        background-color: #ECECEC;
     }
 
     nav #logo_m {
         width: 20vw;
         height: 100%;
+        padding: 10px 5px;
+        border-radius: 50%;
         /* margin-left: 2.5vw; */
     }
 
@@ -424,14 +427,14 @@
         font-size: 7vw;
         font-weight: 800;
         /* margin-right: 2.5vw; */
-        color: #fff;
+        color: #000;
     }
 
     nav #heading {
         font-family: Lobster;
         letter-spacing: 4px;
         font-size: 5vw;
-        color: #e6e6e6;
+        color: #000;
     }
 
     .hero_m {
@@ -439,57 +442,68 @@
         min-height: 100vh;
         max-height: 200vh;
         color: white;
-        /* background-image: url(../IMAGES/hero_mobile.jpg); */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
     .hero_m .hero_main_top {
         width: 100%;
-        min-height: 80vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        height: 50vh;
+        display: flex;  
+        align-items: flex-start;
         flex-direction: column;
         color: #000;
-        background-image: url(../IMAGES/hero_mobile.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .hero_m .hero_main_top h1 {
-        font-size: 11vw;
-        font-weight: 900;
-        font-family: Rubik ExtraBold;
-        color: #000;
-    }
-
-    .hero_m .hero_main_top #from {
-        font-size: 10vw;
-        font-weight: 900;
-        font-family: Lobster;
-        color: #000;
-    }
-
-    .hero_m .hero_main_top #name_web {
-        font-size: 12vw;
-        font-weight: 900;
-        font-family: Rubik ExtraBold;
-        color: #000;
-    }
-
-    .hero_m .hero_main_top a button {
-        width: 45vw;
-        height: 7vh;
-        font-family: monospace;
-        font-weight: 900;
-        font-size: 5vw;
-        padding: 0 5px;
-        margin-top: 5vw;
+        background-color: #ECECEC;
+        text-align: left;
         position: relative;
-        /* left: 15vw; */
+        top: 2vh;
+        padding: 30px 30px;
+    }
+
+    .hero_m .hero_main_top #first_main {
+        color: #000;
+        font-family: gilroy;
+        font-size: 10vw;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    .hero_m .hero_main_top #cool {
+        color: #10A37F;
+        font-family: gilroy;
+        font-size: 10vw;
+        font-weight: 600;
+    }
+
+    .hero_m .hero_main_top #plai #platform {
+        color: #10A37F;
+        font-size: 10vw;
+        font-weight: 600;
+        font-family: gilroy;
+    }
+
+    .hero_m .hero_main_top #plai {
+        color: #000;
+        font-size: 10vw;
+        font-weight: 600;
+        font-family: gilroy;
+    }
+
+    .hero_m .hero_main_top #Ind {
+        color: #000;
+        font-size: 10vw;
+        font-weight: 600;
+        font-family: gilroy;
+    }
+
+    .hero_m .hero_main_top a #explore_btn {
+        background-color: #10A37F;
+        color: #fff;
+        font-family: gilroy;
+        font-weight: 600;
+        padding: 15px 29px;
+        margin-top: 5vh;
+        font-size: 5vw;
+        border-radius: 7px;
+        border: none;
     }
 
     .error_page {
