@@ -584,7 +584,7 @@
     .mobile .menu .silding_menu {
         position: absolute;
         width: 50vw;
-        height: 100vh;
+        min-height: 100vh;
         left: 0;
         top: 0;
         z-index: 1;
