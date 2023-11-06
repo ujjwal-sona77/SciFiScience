@@ -147,6 +147,24 @@ gsap.from(".mobile .content .imgs #img-2", {
 //     },
 //     opacity: 0
 // })
+var menu = document.querySelector(".mobile nav .menu .ri-menu-2-fill");
+var sliding = document.querySelector(".mobile nav .menu .silding_menu");
+var close = document.querySelector(".mobile nav .menu #close");
+function menuclick(){
+    menu.addEventListener("click" , function() {
+        sliding.style.display = "block";
+        close.style.display = "block";
+        menu.style.display = "none";
+    })
+    close.addEventListener("click" , function() {
+        sliding.style.display = "none";
+        menu.style.display = "block";
+        close.style.display = "none";
+    })
+    sliding.style.transitionDuration = "1s";
+    sliding.style.transitionProperty = "all ";
+
+}
 
 
 
