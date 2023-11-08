@@ -533,7 +533,7 @@
 
     nav .name #search {
         font-size: 3.7vw;
-        color: #ECECEC;
+        color: #000;
         font-weight: 600;
         letter-spacing: 2.5px;
         border-radius: 20px;
