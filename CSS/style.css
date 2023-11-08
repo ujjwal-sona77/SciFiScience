@@ -531,12 +531,22 @@
         padding: 20px 20px;
     }
 
-    nav .name #heading {
-        font-size: 4.5vw;
-        color: #fff;
+    nav .name #search {
+        font-size: 3.7vw;
+        color: #ECECEC;
         font-weight: 600;
         letter-spacing: 2.5px;
-        font-family: Lobster;
+        border-radius: 20px;
+        height: 30px;
+        width: 100vw;
+        margin-left: 1vw;
+    }
+
+
+    nav .name #search_icon {
+        font-size: 5vw;
+        color: #fff;
+        font-weight: 800;
     }
 
     nav .menu {
@@ -549,7 +559,7 @@
     }
 
     nav .menu i {
-        color: #fff;
+        color: #000;
         font-weight: 700;
         font-size: 5vw;
         position: relative;
@@ -558,7 +568,7 @@
     }
 
     nav .menu #close {
-        color: #fff;
+        color: #000;
         font-weight: 700;
         font-size: 5vw;
         position: relative;
@@ -583,24 +593,25 @@
 
     .mobile .menu .silding_menu {
         position: absolute;
-        width: 50vw;
+        width: 70vw;
         min-height: 100vh;
         left: 0;
         top: 0;
         z-index: 1;
-        background-color: #000;
-        padding: 50px 30px;
-        line-height: 25px;
+        background-color: #fff;
+        padding: 100px 45px;
+        line-height: 35px;
         display: none;
         transition-duration: 1s;
         transition-property: all;
         font-size: 5vw;
-        font-family: Merriweather;
-        font-weight: 500;
+        font-family: Rubik ExtraBold;
+        font-weight: 600;
+        list-style: none;
     }
 
     .mobile nav .menu .silding_menu ul li a {
-        color: #fff;
+        color: #000;
         text-decoration: none;
     }
 
@@ -689,49 +700,69 @@
     .error_page {
         display: none;
     }
-
-    .hero_m .content {
+     .hero_m .content {
         width: 100%;
-        height: 70vh;
+        min-height: 100vh;
         position: relative;
-        bottom: 15vh;
-        opacity: 0;
-        overflow: hidden;
-    }
+     }
 
-    .mobile .content #con_1 {
-        color: rgba(0, 255, 247, 0.661);
-        font-size: 5vw;
-        text-align: left;
-        font-weight: 700;
-        font-family: gilroy;
-    }
-
-    .mobile .content #con_2 {
-        color: rgba(0, 255, 247, 0.661);
-        font-size: 5vw;
-        text-align: left;
-        font-weight: 700;
-        font-family: gilroy;
-    }
-
-    .mobile .content .imgs {
+     .hero_m .content .main_con {
         width: 100%;
-        height: 17vh;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        background-color: #ffffff10;
-        padding: 10px 20px;
-    }
-
-    .mobile .content .imgs #img-1 {
-        width: 45%;
         height: 100%;
-    }
+     }
 
-    .mobile .content .imgs #img-2 {
-        width: 45%;
+     .hero_m .content .main_con #game_level {
+        color: #B2B2B2;
+        font-size: 7vw;
+        padding: 10px 15px;
+     }
+
+     .hero_m .content .main_con .courses {
+        width: 100%;
+        height: 37vh;
+     }
+
+     .hero_m .content .main_con .courses .courses_links {
+        width: 90%;
         height: 100%;
-    }
+        padding: 20px 20px;
+        display: inline-block;
+        white-space: nowrap;
+     }
+
+     .hero_m .content .main_con .courses .courses_links .w_conser {
+        width: 100%;
+        background-color: #d9d9d9;
+        height: 100%;
+        border-radius: 30px;
+        border: .5px solid black;
+        overflow: hidden;
+        display: inline-block;
+     }
+
+     .hero_m .content .main_con .courses .courses_links .w_conser #img_wcon {
+        width: 100%;
+        height: 65%;
+
+     }
+
+     .hero_m .content .main_con .courses .courses_links .w_conser #content_p {
+        font-size: 3.5vw;
+        padding: 5px 2px;
+     }
+
+     .hero_m .content .main_con .courses .courses_links .w_conser a button {
+        color: #000;
+        font-family: gilroy;
+        font-weight: 900;
+        padding: 10px 29px;
+        font-size: 4.5vw;
+        border-radius: 7px;
+        border: none;
+        position: relative;
+        left: 10vw;
+        width: 30vw;
+     }
+
+
 }
