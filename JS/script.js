@@ -129,6 +129,30 @@ gsap.to(".hero_m .hero_main_top" , {
     } ,
     opacity: 0
 })
+// gsap.to(".mobile .content .main_con" , {
+//     scrollTrigger: {
+//         scroller: "body",
+//         trigger: ".mobile .content .main_con",
+//         scrub: 1, 
+//         start: "top 40%",
+//         end: "top 45%"
+//     },
+//     opacity: 1,
+//     duration: 1.1
+// })
+
+// gsap.from(".mobile .content .main_con" , {
+//     scrollTrigger: {
+//         scroller: "body",
+//         trigger: ".mobile .content .main_con",
+//         scrub: 1, 
+//         start: "top 40%",
+//         end: "top 45%"
+//     },
+//     y: 170,
+//     delay: .7,
+//     duration: 1
+// })
 
 
 

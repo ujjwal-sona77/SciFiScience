@@ -700,69 +700,62 @@
     .error_page {
         display: none;
     }
-     .hero_m .content {
+
+    .mobile .hero_m .content {
         width: 100%;
-        min-height: 100vh;
+        height: 100vh;
+    }
+
+    .mobile .hero_m .content .courses {
+        width: 100%;
+        height: 60%;
         position: relative;
-     }
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-right: 12px;
+        padding-left: 12px;
+    }
 
-     .hero_m .content .main_con {
-        width: 100%;
-        height: 100%;
-     }
-
-     .hero_m .content .main_con #game_level {
-        color: #B2B2B2;
+    .mobile .hero_m .content .courses #game {
+        font-family: Gilroy;
         font-size: 7vw;
-        padding: 10px 15px;
-     }
+        color: #555555;
+    }
 
-     .hero_m .content .main_con .courses {
+    .mobile .hero_m .content .courses #courses {
+        font-family: Gilroy;
+        font-size: 7vw;
+        font-weight: 800;
+        color: #000000;
+        margin-top: 2vw;  
+    }
+    
+    .mobile .hero_m .content .courses .c_details {
         width: 100%;
-        height: 37vh;
-     }
-
-     .hero_m .content .main_con .courses .courses_links {
-        width: 90%;
         height: 100%;
-        padding: 20px 20px;
-        display: inline-block;
-        white-space: nowrap;
-     }
+        background-color: cyan;
+        border-radius: 20px;
+    }
 
-     .hero_m .content .main_con .courses .courses_links .w_conser {
+    .mobile .hero_m .content .courses .c_details .ae {
         width: 100%;
-        background-color: #d9d9d9;
         height: 100%;
-        border-radius: 30px;
-        border: .5px solid black;
         overflow: hidden;
-        display: inline-block;
-     }
+    }
 
-     .hero_m .content .main_con .courses .courses_links .w_conser #img_wcon {
+    .mobile .hero_m .content .courses .c_details .ae .image {
         width: 100%;
-        height: 65%;
+        height: 50%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
 
-     }
-
-     .hero_m .content .main_con .courses .courses_links .w_conser #content_p {
-        font-size: 3.5vw;
-        padding: 5px 2px;
-     }
-
-     .hero_m .content .main_con .courses .courses_links .w_conser a button {
-        color: #000;
-        font-family: gilroy;
-        font-weight: 900;
-        padding: 10px 29px;
-        font-size: 4.5vw;
-        border-radius: 7px;
-        border: none;
-        position: relative;
-        left: 10vw;
-        width: 30vw;
-     }
-
-
+    .mobile .hero_m .content .courses .c_details .ae .image #ae_img {
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
 }
