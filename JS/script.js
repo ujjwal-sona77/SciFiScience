@@ -154,6 +154,37 @@ gsap.to(".hero_m .hero_main_top" , {
 //     duration: 1
 // })
 
+var tl1 = gsap.timeline();
+
+function time(){
+    var a = 0
+    setInterval(function(){
+        a = a + Math.floor(Math.random()*15)
+        if(a < 100){
+            document.querySelector(".loading h1").innerHTML = a + "%";
+        }
+        else{
+            a = 100
+            document.querySelector(".loading h1").innerHTML = a + "%";
+        }
+    },100)
+}
+
+time();
+
+tl1.to(".loading h1" , {
+    scale: 1.5,
+    delay: 0.5,
+    duration: 1,
+    onStart: time()
+})
+
+tl1.to(".loading" , {
+    top: "-100vh" , 
+    delay: 0.5,
+    duration: 1.5
+})
+
 
 
 

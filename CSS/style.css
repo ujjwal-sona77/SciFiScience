@@ -23,12 +23,30 @@
     src: url(../FONTS/Lobster-Regular.woff2);
 }
 
+.loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 99;
+    background-color: rgb(214, 214, 214);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading h1 {
+    font-size: 7.1vw;
+    color: #000;
+    font-family: Rubik ExtraBold;
+    font-weight: 900;
+}
+
 @media (min-width : 1000px) and (max-width : 1600px) {
     .crsr {
         height: 20px;
         width: 20px;
         background: linear-gradient(#000, #fff, grey);
-        z-index: 99;
+        z-index: 10;
         position: fixed;
         border-radius: 50%;
         transition-property: all;
@@ -84,7 +102,7 @@
         /* background-color: #000; */
         font-size: 1.25vw;
         position: fixed;
-        z-index: 99;
+        z-index: 9;
         color: white;
     }
 
@@ -100,6 +118,7 @@
         text-transform: uppercase;
         font-size: .9vw;
         color: white;
+        z-index: 9;
     }
 
     nav a i {
@@ -107,6 +126,8 @@
         font-size: 1vw;
         font-weight: 900;
         color: white;
+        position: relative;
+        z-index: 9;
     }
 
     .search {
@@ -117,6 +138,8 @@
         color: rgb(56, 56, 56);
         font-size: 1vw;
         font-weight: 900;
+        position: relative;
+        z-index: 9;
     }
 
     .search i {
