@@ -72,7 +72,53 @@ gsap.to(".page1" , {
     } ,
     opacity: 0,
     duration: .7
+});
+
+var animation = gsap.timeline();
+
+function time(){
+    var a = 0
+    setInterval(function(){
+        a = a + Math.floor(Math.random()*15)
+        if(a < 100){
+            document.querySelector(".loading h1").innerHTML = a + "%";
+        }
+        else{
+            a = 100
+            document.querySelector(".loading h1").innerHTML = a + "%";
+        }
+    },100)
+}
+
+time();
+
+animation.to(".loading h1" , {
+    scale: 1.5,
+    delay: 0.2,
+    duration: 1,
+    onStart: time()
 })
+
+animation.to(".loading" , {
+    top: "-100vh" , 
+    delay: 0.5,
+    duration: 1.5
+})
+
+animation.from("nav #logo , nav a , nav .search" , {
+    y: -100,
+    stagger: 0.1,
+    duration: .7,
+})
+
+animation.from(".main .hero h1 , .main .hero h2 , .main .hero p " , {
+    y: -100,
+    stagger: 0.2,
+    duration: .9,
+    opacity: 0
+})
+
+
 
 
 // Mobile part
@@ -129,61 +175,11 @@ gsap.to(".hero_m .hero_main_top" , {
     } ,
     opacity: 0
 })
-// gsap.to(".mobile .content .main_con" , {
-//     scrollTrigger: {
-//         scroller: "body",
-//         trigger: ".mobile .content .main_con",
-//         scrub: 1, 
-//         start: "top 40%",
-//         end: "top 45%"
-//     },
-//     opacity: 1,
-//     duration: 1.1
-// })
 
-// gsap.from(".mobile .content .main_con" , {
-//     scrollTrigger: {
-//         scroller: "body",
-//         trigger: ".mobile .content .main_con",
-//         scrub: 1, 
-//         start: "top 40%",
-//         end: "top 45%"
-//     },
-//     y: 170,
-//     delay: .7,
-//     duration: 1
-// })
 
-var tl1 = gsap.timeline();
 
-function time(){
-    var a = 0
-    setInterval(function(){
-        a = a + Math.floor(Math.random()*15)
-        if(a < 100){
-            document.querySelector(".loading h1").innerHTML = a + "%";
-        }
-        else{
-            a = 100
-            document.querySelector(".loading h1").innerHTML = a + "%";
-        }
-    },100)
-}
 
-time();
 
-tl1.to(".loading h1" , {
-    scale: 1.5,
-    delay: 0.5,
-    duration: 1,
-    onStart: time()
-})
-
-tl1.to(".loading" , {
-    top: "-100vh" , 
-    delay: 0.5,
-    duration: 1.5
-})
 
 
 
