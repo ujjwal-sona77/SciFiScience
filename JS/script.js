@@ -1,8 +1,8 @@
-var crsr = document.querySelector = (".pc .crsr");
+var crsr = document.querySelector(".pc .crsr");
 document.addEventListener("mousemove", function (dets) {
-    gsap.to(".pc .crsr" , {
-        x: dets.x + 25 ,
-        y: dets.y + 25
+    gsap.to(crsr , {
+        x: dets.x + 20 ,
+        y: dets.y + 20
     })
 });
 

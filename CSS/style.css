@@ -42,7 +42,7 @@
 }
 
 @media (min-width : 1000px) and (max-width : 1600px) {
-    .crsr {
+    .pc .crsr {
         height: 2vw;
         width: 2vw;
         background: linear-gradient(#000, #fff, grey);
