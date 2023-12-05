@@ -225,6 +225,7 @@
         color: white;
         height: 100%;
         overflow: hidden;
+        padding: 30px 30px;
     }
 
     .page1 .top {
@@ -304,7 +305,12 @@
     }
 
     #imo_1 {
-        width: 300px;
+        width: 20vw;
+        height: 168px;
+    }
+
+    #imo_2 {
+        width: 20vw;
         height: 168px;
     }
 
