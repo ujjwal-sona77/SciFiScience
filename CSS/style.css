@@ -43,15 +43,13 @@
 
 @media (min-width : 1000px) and (max-width : 1600px) {
     .crsr {
-        height: 20px;
-        width: 20px;
+        height: 2vw;
+        width: 2vw;
         background: linear-gradient(#000, #fff, grey);
         z-index: 10;
         position: fixed;
         border-radius: 50%;
-        transition-property: all;
-        transition-duration: 0.1s;
-        transition-delay: 0.000099s;
+        transform: translate(-50% , -50%)
     }
 
     .pc .wrap {

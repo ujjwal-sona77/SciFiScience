@@ -1,7 +1,9 @@
-var crsr = document.querySelector(".pc .crsr");
+var crsr = document.querySelector = (".pc .crsr");
 document.addEventListener("mousemove", function (dets) {
-    crsr.style.left = dets.x + 7 + "px";
-    crsr.style.top = dets.y + 7 + "px";
+    gsap.to(".pc .crsr" , {
+        x: dets.x + 25 ,
+        y: dets.y + 25
+    })
 });
 
 var images = document.querySelectorAll("body img");
