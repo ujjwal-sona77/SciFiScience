@@ -233,6 +233,14 @@ gsap.to(".hero_m .hero_main_top", {
     opacity: 0
 })
 
+const lenis = new Lenis()
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
 
 
 
