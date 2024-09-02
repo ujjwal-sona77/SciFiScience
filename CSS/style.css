@@ -42,7 +42,29 @@
 }
 
 @media (min-width : 800px) and (max-width : 5000px) {
-    .pc .crsr {
+    
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+
+.pc .crsr {
         height: 2vw;
         width: 2vw;
         background: linear-gradient(#000, #fff, grey);
