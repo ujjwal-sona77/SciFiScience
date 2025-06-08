@@ -31,6 +31,13 @@ function loco() {
 }
 loco();
 
+Shery.mouseFollower({
+    //Parameters are optional.
+    skew: true,
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    duration: 1,
+  });
+
 Shery.textAnimate("#envi_head", {
 	style: 2,
 	y: 10,
@@ -114,11 +121,6 @@ function menuclick() {
 	sliding.style.transitionProperty = "all ";
 };
 
-var crsr = document.querySelector(".pc .crsr");
-document.addEventListener("mousemove", function (dets) {
-	crsr.style.left = dets.x + 25 + "px";
-	crsr.style.top = dets.y + 25 + "px";
-});
 
 
 

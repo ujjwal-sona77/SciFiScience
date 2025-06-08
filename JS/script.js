@@ -1,66 +1,12 @@
-var crsr = document.querySelector(".pc .crsr");
-document.addEventListener("mousemove", function (dets) {
-    gsap.to(crsr , {
-        x: dets.x + 20 ,
-        y: dets.y + 20
-    })
-});
+Shery.mouseFollower({
+    //Parameters are optional.
+    skew: true,
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    duration: 1,
+  });
 
 var images = document.querySelectorAll("body img");
-var buttons = document.querySelectorAll("body button")
-var anchers = document.querySelectorAll("body a")
-images.forEach(function(i){
-        i.addEventListener("mouseover" , function(){
-            crsr.style.width = "50px";
-            crsr.style.height = "50px";
-            crsr.style.background = "transparent";
-            crsr.style.border = "2px solid white";
-        });
-
-        i.addEventListener("mouseleave" , function(){
-            crsr.style.width = "20px";
-            crsr.style.height = "20px";
-            crsr.style.background = "linear-gradient(#000, #fff, grey)";
-            crsr.style.border = "none";
-        });
-});
-
-
-buttons.forEach(function(i){
-        i.addEventListener("mouseover" , function(){
-            crsr.style.width = "50px";
-            crsr.style.height = "50px";
-            crsr.style.background = "transparent";
-            crsr.style.border = "2px solid white";
-        });
-
-        i.addEventListener("mouseleave" , function(){
-            crsr.style.width = "20px";
-            crsr.style.height = "20px";
-            crsr.style.background = "linear-gradient(#000, #fff, grey)";
-            crsr.style.border = "none";
-        });
-});
-
-
-anchers.forEach(function(i){
-        i.addEventListener("mouseover" , function(){
-            crsr.style.width = "50px";
-            crsr.style.height = "50px";
-            crsr.style.background = "transparent";
-            crsr.style.border = "2px solid white";
-        });
-
-        i.addEventListener("mouseleave" , function(){
-            crsr.style.width = "20px";
-            crsr.style.height = "20px";
-            crsr.style.background = "linear-gradient(#000, #fff, grey)";
-            crsr.style.border = "none";
-        });
-});
-
-
-
+var buttons = document.querySelectorAll("body button");
 
 
 gsap.to(".pc nav", {
