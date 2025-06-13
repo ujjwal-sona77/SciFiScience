@@ -12,8 +12,8 @@ var buttons = document.querySelectorAll("body button");
 // Initialize Lenis
 const lenis = new Lenis({
   autoRaf: true,
-  lerp: 0.09,
-  duration: 3,
+  lerp: 0.05,
+  duration: 4,
 });
 
 // Listen for the scroll event and log the event data
