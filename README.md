@@ -5,6 +5,6 @@ Class 8
 <br>
 Defence Public School
 <br>
-Jaipur 
+Navi Mumbai
 <br>
-Rajasthan 
+Maharashtra
