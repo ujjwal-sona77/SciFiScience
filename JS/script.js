@@ -9,6 +9,20 @@ var images = document.querySelectorAll("body img");
 var buttons = document.querySelectorAll("body button");
 
 
+// Initialize Lenis
+const lenis = new Lenis({
+  autoRaf: true,
+});
+
+// Listen for the scroll event and log the event data
+// Use requestAnimationFrame to continuously update the scroll
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
 gsap.to(".pc nav", {
     backgroundColor: "#a6a2a2",
     height: "12vh",
